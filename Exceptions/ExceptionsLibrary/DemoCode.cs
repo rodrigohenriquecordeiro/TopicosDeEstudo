@@ -20,7 +20,7 @@ namespace ExceptionsLibrary
             catch (Exception ex)
             {
                 //Do some logging
-                throw new Exception("Fiz merda", ex);
+                throw new ArgumentException("Fiz merda", ex);
             }
             finally
             {
