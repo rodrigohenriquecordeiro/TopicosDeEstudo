@@ -8,23 +8,47 @@ namespace EstruturasDeDados
 {
     internal class Program
     {
+        const int max = 3;
+
         static void Main(string[] args)
         {
-            List<Series> lstSeries = new List<Series>
-            {
-                new Series { NomeDaSerie = "The Diplomat", Streaming = "Netflix" },
-                new Series { NomeDaSerie = "Secreat Invasion", Streaming = "Disney+" },
-                new Series { NomeDaSerie = "American Dad!", Streaming = "Star+" },
-                new Series { NomeDaSerie = "Girls", Streaming = "HBO Max" },
-                new Series { NomeDaSerie = "Good Omens", Streaming = "Prime Video" },
-            };
+            //Lista Linear Sequencial
+            int[] arranjo = new int[max + 1];
+            arranjo[0] = 25;
+            arranjo[1] = 4;
+            arranjo[2] = 333;
 
-            foreach (var item in lstSeries)
-            {
-                Console.WriteLine($"Série: {item.NomeDaSerie} - Streaming: {item.Streaming}");
-            }
+            Console.Write("Digite sua escolha: "); int escolha = int.Parse(Console.ReadLine());
+            //Console.WriteLine($"Posição: {BuscaLinearSequencial(arranjo, escolha)}"); 
+            Console.WriteLine($"Posição: {BuscaLinearSequencial2(arranjo, escolha)}");
 
             Console.ReadLine();
+        }
+
+        public static int BuscaLinearSequencial(int[] arranjo, int chave)
+        {
+            int i = 0;
+            while (i < arranjo.Length)
+            {
+                if (chave == arranjo[i])
+                    return i;
+                else
+                    i++;
+            }
+            return -1;
+        }
+
+        public static int BuscaLinearSequencial2(int[] arranjo, int chave)
+        {
+            int i = 0;
+            int sentinela = chave;
+            arranjo[max] = sentinela;
+
+            while (arranjo[i] != chave) i++;
+            if (i == sentinela)
+                return -1;
+            else
+                return i;
         }
     }
 }
