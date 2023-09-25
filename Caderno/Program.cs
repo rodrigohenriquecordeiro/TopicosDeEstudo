@@ -1,8 +1,4 @@
-﻿double altura = 1.70;
-double peso = 75;
-string corDosOlhos = "Azul";
-
-if (altura > 1.60 || peso == 60 && corDosOlhos != "Verde")
-    Console.WriteLine("Sim");
-else
-    Console.WriteLine("Não");
+﻿for (int i = 1; i < 1000000; i++)
+{
+    Console.WriteLine(i);
+}
