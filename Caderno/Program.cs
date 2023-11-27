@@ -1,34 +1,17 @@
-﻿internal class Program
+﻿Console.WriteLine("Digite 10 números\n");
+
+int numeroDigitado, numeroMaior;
+
+Console.Write("Digite o 1º número: ");
+numeroMaior = int.Parse(Console.ReadLine());
+
+for (int i = 2; i <= 10; i++)
 {
-    private static void Main(string[] args)
-    {
-        Dudu();
+    Console.Write($"Digite o {i}º número: ");
+    numeroDigitado = int.Parse(Console.ReadLine());
 
-        //Rodrigo();
-
-        Console.ReadLine();
-    }
-
-    static void Dudu()
-    {
-        string nome = "";
-
-        Console.Write("Digite um nome: ");
-        nome = Console.ReadLine();
-
-        if (nome == "Dudu")
-        {
-            Console.WriteLine("Acesso liberado!");
-        }
-        else
-        {
-            Console.WriteLine("Acesso negado");
-        }
-    }
-
-    static void Rodrigo()
-    {
-        Console.Write("Digite um nome: "); 
-        Console.Write(string.Equals(Console.ReadLine(), "Rodrigo") ? "Acesso liberado" : "Acesso negado!");
-    }
+    if (numeroDigitado > numeroMaior)
+        numeroMaior = numeroDigitado;
 }
+
+Console.WriteLine($"Número Maior: {numeroMaior}");
