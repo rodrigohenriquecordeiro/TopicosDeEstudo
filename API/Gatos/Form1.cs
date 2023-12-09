@@ -6,5 +6,12 @@ namespace Gatos
         {
             InitializeComponent();
         }
+
+        private void btn_Carregar_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new();
+            form2.Show();
+            this.Hide();
+        }
     }
 }
