@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pbox_Gatos = new PictureBox();
-            lbl_Mensagem = new Label();
-            ((System.ComponentModel.ISupportInitialize)pbox_Gatos).BeginInit();
+            components = new System.ComponentModel.Container();
+            lbl_MensagemFato = new Label();
+            pictureBox_Gatos = new PictureBox();
+            timer1 = new System.Windows.Forms.Timer(components);
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Gatos).BeginInit();
             SuspendLayout();
             // 
-            // pbox_Gatos
+            // lbl_MensagemFato
             // 
-            pbox_Gatos.Location = new Point(65, 67);
-            pbox_Gatos.Name = "pbox_Gatos";
-            pbox_Gatos.Size = new Size(218, 154);
-            pbox_Gatos.TabIndex = 0;
-            pbox_Gatos.TabStop = false;
-            pbox_Gatos.Click += pbox_Gatos_Click;
+            lbl_MensagemFato.Location = new Point(373, 101);
+            lbl_MensagemFato.Name = "lbl_MensagemFato";
+            lbl_MensagemFato.Size = new Size(189, 76);
+            lbl_MensagemFato.TabIndex = 0;
             // 
-            // lbl_Mensagem
+            // pictureBox_Gatos
             // 
-            lbl_Mensagem.Location = new Point(389, 79);
-            lbl_Mensagem.Name = "lbl_Mensagem";
-            lbl_Mensagem.Size = new Size(174, 118);
-            lbl_Mensagem.TabIndex = 1;
-            lbl_Mensagem.Click += lbl_Mensagem_Click;
+            pictureBox_Gatos.Location = new Point(29, 28);
+            pictureBox_Gatos.Name = "pictureBox_Gatos";
+            pictureBox_Gatos.Size = new Size(300, 250);
+            pictureBox_Gatos.TabIndex = 1;
+            pictureBox_Gatos.TabStop = false;
             // 
             // Form2
             // 
@@ -56,18 +56,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(630, 322);
-            Controls.Add(lbl_Mensagem);
-            Controls.Add(pbox_Gatos);
+            Controls.Add(pictureBox_Gatos);
+            Controls.Add(lbl_MensagemFato);
             Name = "Form2";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Fotos e Fatos sobre Gatos!";
-            ((System.ComponentModel.ISupportInitialize)pbox_Gatos).EndInit();
+            Load += Form2_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Gatos).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pbox_Gatos;
-        private Label lbl_Mensagem;
+        private Label lbl_MensagemFato;
+        private PictureBox pictureBox_Gatos;
+        private System.Windows.Forms.Timer timer1;
     }
 }
