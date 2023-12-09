@@ -37,16 +37,17 @@
             // 
             // lbl_MensagemFato
             // 
-            lbl_MensagemFato.Location = new Point(373, 101);
+            lbl_MensagemFato.Font = new Font("Rockwell", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_MensagemFato.Location = new Point(503, 48);
             lbl_MensagemFato.Name = "lbl_MensagemFato";
-            lbl_MensagemFato.Size = new Size(189, 76);
+            lbl_MensagemFato.Size = new Size(272, 350);
             lbl_MensagemFato.TabIndex = 0;
             // 
             // pictureBox_Gatos
             // 
-            pictureBox_Gatos.Location = new Point(29, 28);
+            pictureBox_Gatos.Location = new Point(62, 48);
             pictureBox_Gatos.Name = "pictureBox_Gatos";
-            pictureBox_Gatos.Size = new Size(300, 250);
+            pictureBox_Gatos.Size = new Size(380, 350);
             pictureBox_Gatos.TabIndex = 1;
             pictureBox_Gatos.TabStop = false;
             // 
@@ -55,7 +56,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(630, 322);
+            ClientSize = new Size(884, 461);
             Controls.Add(pictureBox_Gatos);
             Controls.Add(lbl_MensagemFato);
             Name = "Form2";

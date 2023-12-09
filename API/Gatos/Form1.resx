@@ -678,7 +678,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>430, 36</value>
+    <value>604, 100</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 230</value>
@@ -706,7 +706,7 @@
     <value>Rockwell, 20.25pt</value>
   </data>
   <data name="lgl_Apresentacao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 36</value>
+    <value>143, 100</value>
   </data>
   <data name="lgl_Apresentacao.Size" type="System.Drawing.Size, System.Drawing">
     <value>350, 130</value>
@@ -739,7 +739,7 @@
     <value>Showcard Gothic, 12pt</value>
   </data>
   <data name="btn_Carregar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 216</value>
+    <value>226, 280</value>
   </data>
   <data name="btn_Carregar.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 50</value>
@@ -769,7 +769,7 @@
     <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>630, 322</value>
+    <value>884, 461</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
