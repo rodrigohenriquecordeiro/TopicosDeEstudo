@@ -10,7 +10,7 @@
  ## API
  Com ajuda da Alura, comecei a rever Orientação a Objetos em C# e iniciei estudo sobre consumo de API.
 
- Esse programa consome duas API's sobre gatos. A primeira, [cat-facts](https://alexwohlbruck.github.io/cat-facts/), informa 5 fatos interessantes e a segunda, [CATAAS](https://cataas.com/), busca 5 GIF's. Na tela de boas vindas utiizei uma imagem fornecida pelo querido amigo Eduardo Albuquerque (Obrigado Dudu!).
+ Esse programa consome duas API's sobre gatos. A primeira, [cat-facts](https://alexwohlbruck.github.io/cat-facts/), informa 5 fatos interessantes e a segunda, [CATAAS](https://cataas.com/), busca 5 GIF's. Na tela de boas vindas utilizei uma imagem fornecida pelo querido amigo Eduardo Albuquerque (Obrigado Dudu!).
 
  **Tecnologias utilizadas:** .NET 6, C# e Windows Form.
 
