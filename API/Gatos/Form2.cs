@@ -29,7 +29,7 @@ namespace Gatos
         {
             try
             {
-                HttpResponseMessage response = await client.GetAsync("https://cataas.com/cat");
+                HttpResponseMessage response = await client.GetAsync("https://cataas.com/cat/gif");
 
                 if (response.IsSuccessStatusCode)
                 {

@@ -11,7 +11,6 @@ namespace Gatos
         {
             Form2 form2 = new();
             form2.Show();
-            this.Hide();
         }
     }
 }
